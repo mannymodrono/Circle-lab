@@ -4,6 +4,10 @@ public class Circle {
     private final double pi = 3.14;
 
     //constructors
+    public Circle(){
+
+    }
+
     public Circle(double pRadius){
         this.radius = pRadius;
     }
@@ -19,5 +23,13 @@ public class Circle {
 
     public double getArea() {
         return pi * radius * radius;
+    }
+
+    public double getDiameter() {
+        return radius * 2.0;
+    }
+
+    public double getCircumference() {
+        return this.getDiameter() * pi;
     }
 }
