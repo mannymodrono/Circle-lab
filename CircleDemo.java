@@ -5,9 +5,11 @@ public class CircleDemo {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Circle radius?");
-        Double radius = input.nextDouble();
+        double radius = input.nextDouble();
 
         Circle circle = new Circle(radius);
+
+        input.close();
 
         System.out.println("Circle's area is: " + circle.getArea());
         System.out.println("Circle's diameter:  " + circle.getDiameter());
